@@ -17,7 +17,8 @@ class ShowsController < ApplicationController
   end
 
   def create_params
-    params.require(:new_show).permit([:title, :series, :description, :image, :programmeID])
+    params.require(:new_show)
+          .permit([:title, :series, :description, :image, :programmeID])
   end
 
 end
