@@ -3,9 +3,9 @@ class CreateShows < ActiveRecord::Migration
     create_table :shows do |t|
       t.string :title
       t.integer :series
-      t.text :description
+      t.string :description
       t.string :image
-      t.string :showID
+      t.string :programmeCode
 
       t.timestamps null: false
     end

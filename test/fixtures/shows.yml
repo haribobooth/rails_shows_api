@@ -3,13 +3,13 @@
 one:
   title: MyString
   series: 1
-  description: MyText
+  description: MyString
   image: MyString
-  showID: MyString
+  programmeCode: MyString
 
 two:
   title: MyString
   series: 1
-  description: MyText
+  description: MyString
   image: MyString
-  showID: MyString
+  programmeCode: MyString
