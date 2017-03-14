@@ -1,6 +1,10 @@
 Rails.application.routes.draw do
-  get 'shows' => 'shows#index'
-  post 'shows' => 'shows#create'
+  # get 'shows' => 'shows#index'
+  # post 'shows' => 'shows#create'
+
+  scope path: "/" do
+    resources :shows
+  end
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
