@@ -1,7 +1,9 @@
 class ShowsController < ApplicationController
 
+  before_action :authenticate_user!
+
   def index
-    render json: Show.all
+    render json: current_user.favourites
   end
 
   def create
